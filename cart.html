@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Cart - Hot Wheels</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', Arial, sans-serif;
+      background: #fff;
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      background: #fff;
+      padding: 36px 0 18px 0;
+      text-align: center;
+      border-bottom: 1px solid #e5e5e5;
+      letter-spacing: 0.2em;
+    }
+    .header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #222;
+      margin: 0;
+      letter-spacing: 0.2em;
+    }
+    .nav-bar {
+      background: #fff;
+      border-bottom: 1px solid #e5e5e5;
+      padding: 0;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .nav-link {
+      display: inline-block;
+      margin: 0 32px;
+      color: #222;
+      font-weight: 500;
+      text-decoration: none;
+      font-size: 1.1rem;
+      letter-spacing: 0.1em;
+      padding: 18px 0;
+      border-bottom: 2px solid transparent;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .nav-link:hover, .nav-link.active {
+      color: #222;
+      border-bottom: 2px solid #222;
+      background: none;
+    }
+    .cart-item {
+      background: #fafafa;
+      padding: 32px 24px;
+      border-radius: 0;
+      margin-bottom: 24px;
+      box-shadow: none;
+      border: 1px solid #e5e5e5;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: box-shadow 0.2s;
+    }
+    .cart-item:hover {
+      box-shadow: 0 4px 24px #00000010;
+    }
+    .cart-item h3 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin: 0;
+      letter-spacing: 0.05em;
+    }
+    .highlight {
+      color: #222;
+      font-weight: 500;
+      font-size: 1.1rem;
+      margin: 0;
+    }
+    .total {
+      color: #222;
+      font-size: 1.3rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      margin-bottom: 24px;
+      text-align: right;
+    }
+    .neon-btn {
+      background: #222;
+      color: #fff;
+      border: none;
+      padding: 14px 48px;
+      border-radius: 0;
+      font-size: 1.1rem;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+      box-shadow: none;
+      text-transform: uppercase;
+    }
+    .neon-btn:hover {
+      background: #fff;
+      color: #222;
+      border: 1px solid #222;
+    }
+    .footer {
+      background: #fff;
+      text-align: center;
+      padding: 24px 0 18px 0;
+      font-size: 1rem;
+      color: #888;
+      border-top: 1px solid #e5e5e5;
+      letter-spacing: 0.1em;
+      margin-top: 60px;
+    }
+    @media (max-width: 600px) {
+      .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 12px;
+      }
+      .nav-link {
+        margin: 0 10px;
+        font-size: 1rem;
+        padding: 12px 0;
+      }
+      .header h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>MY CART</h1>
+  </div>
+
+  <div class="nav-bar">
+    <a href="index.html" class="nav-link">HOME</a>
+    <a href="page1.html" class="nav-link">PAGE 1</a>
+    <a href="page2.html" class="nav-link">PAGE 2</a>
+    <a href="cart.html" class="nav-link active">MY CART</a>
+  </div>
+
+  <div class="max-w-xl mx-auto px-4 py-8">
+    <div class="cart-item">
+      <h3>Nitro Racer</h3>
+      <p class="highlight">₹999</p>
+    </div>
+    <div class="cart-item">
+      <h3>Blaze Runner</h3>
+      <p class="highlight">₹1299</p>
+    </div>
+
+    <div style="margin-top: 36px;">
+      <p class="total">Total: ₹2298</p>
+      <button class="neon-btn">Checkout</button>
+    </div>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 Hot Wheels Zone | All rights reserved 🚗
+  </div>
+
+</body>
+</html>
